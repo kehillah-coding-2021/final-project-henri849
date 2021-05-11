@@ -25,3 +25,11 @@ class car:
         #bpy.ops.wm.redraw_timer(type='ANIM_STEP', iterations=10)
     def rotate(self,angle,value):
         self.object.rotation_euler[angle] = value
+
+sedan = car(obj)
+for i in range(10):
+    sedan.rotate(2,i/4)
+    sedan.move(-10)
+    #scene.update()
+    #bpy.ops.wm.redraw_timer(type='ANIM_STEP', iterations=10000)
+    time.sleep(0.01)
