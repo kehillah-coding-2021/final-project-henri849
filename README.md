@@ -7,6 +7,6 @@ use a companion of mediapipe's hand model, TensorFlow models off the dataset I m
 ### Grading
 This project will use the usual rubric we have used this year. Make sure to add docstrings to all your functions and edit this README. Make sure to put any dependencies in a 'requirements.txt' file. Commit and push your work often. Most importantly, have fun!
 
-
+Sadly the windows screen record can only caputure one window at a time and opencv creates a new one where it shows the webcam
 https://user-images.githubusercontent.com/70386636/118740793-93423580-b801-11eb-8b4c-48697162d995.mp4
 
