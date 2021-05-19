@@ -3,6 +3,7 @@ import mediapipe as mp
 import time
 from statistics import mean
 import json
+# start vid capture
 cap = cv2.VideoCapture(0)
 mpHands = mp.solutions.hands
 hands = mpHands.Hands()
@@ -14,7 +15,7 @@ k = 0
 while True:
     pas, img = cap.read()
     imageRGB = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
-
+    
     results = hands.process(imageRGB)
 
     if results.multi_hand_landmarks:
@@ -35,11 +36,7 @@ while True:
                 x[-1].append([[id,results.multi_handedness[z].classification[-1].label],[lm.x,lm.y,lm.z]])
             z += 1 
         l  = cv2.waitKey(1)
-        if l == ord('w'):         #pour sauvegarder un frame
-            page = open("wheel.txt","a")
-            page.write("\n"+json.dumps(x) )
-            page.close()
-        if l == ord('a'):         #pour sauvegarder un frame
+        if l == ord('a'):         #goods
             page = open("wheel+acse.txt","a")
             j +=1
             print("pass",j)
@@ -51,12 +48,14 @@ while True:
             page = open("bads.txt","a")
             page.write("\n"+json.dumps(x) )
             page.close()
-        if l == 27:         #pour quiter le program
+        if l == 27:         #quit
             cv2.destroyAllWindows()
             break
+    # telling the user the current refresh frames per second
     cTime = time.time()
     fps = 1/(cTime-pTime)
     pTime = cTime
     cv2.putText(img,str(int(fps)),(10,70),cv2.FONT_HERSHEY_PLAIN,3, (255,0,255),3)
+    #display them with the points on their hand
     cv2.imshow("image",img)
     cv2.waitKey(1)
