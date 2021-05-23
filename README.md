@@ -13,7 +13,7 @@ https://user-images.githubusercontent.com/70386636/118740793-93423580-b801-11eb-
 
 SETING UP BLENDER
 this aplies only if I can't export the file in an usable way
-1. install blender 2.79 from the blender website link will be added
+1. install blender 2.79 32 (even if on 64 bit) bit from the blender website link will be added
 2. follow the last comment on https://blenderartists.org/t/how-to-add-external-python-modules-to-the-bge-so-they-work-in-the-exported-run-time/566542/12
 3. open blender after the modifications naviage to file -> open select the blender file that I will rovide
 4. next to the words Default (top center) click on the weird box (images will be provided) swich to 3D Full View and press P USE ESC to kill program bc of how blender works the mouse will disapear when over blender windows when program is being ran
