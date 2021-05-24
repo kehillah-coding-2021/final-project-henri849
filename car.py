@@ -1,3 +1,4 @@
+# this code will be removed and I'll upload the new version with phisics
 import bpy
 from mathutils import Vector
 import time
