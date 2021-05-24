@@ -21,7 +21,7 @@ LIABILITY
 1. I cannot garenty the safety of the program and running and modifiing the script is at your OWN RISK
 2. this was made for windows 10 and might not work without all the apropreate libraries
 3. It uses the camera so risks come with that
-4. As always these are warinings and potentital outcomes, I have never seen it damage anything but I don't want to be responsible
+4. As always these are warnings and potentital outcomes, I have never seen it damage anything but I don't want to be responsible
 
 
 
