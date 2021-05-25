@@ -11,6 +11,7 @@ https://drive.google.com/file/d/1jVSqg8RcT52zcIHBECwt7TUZ74n91ADb/view?usp=shari
 
 Sadly the windows screen record can only caputure one window at a time and opencv creates a new one where it shows the webcam
 https://user-images.githubusercontent.com/70386636/118740793-93423580-b801-11eb-8b4c-48697162d995.mp4 (VIDEO TO BE REMOVED, I am working on a new one with phisics and the webcam view)
+
 LIABILITY
 1. I cannot garenty the safety of the program and running and modifiing the script is at your OWN RISK
 2. this was made for windows 10 and might not work without all the apropreate libraries
