@@ -8,9 +8,12 @@ NOTE:
 HERE IS THE BLENDER VERSION TO USE, IT HAS THE INSTALLED LIBS AND THE MODEL:
 https://drive.google.com/file/d/1jVSqg8RcT52zcIHBECwt7TUZ74n91ADb/view?usp=sharing
 
+Car logic
+![logic](https://user-images.githubusercontent.com/70386636/120093592-359acc80-c0d0-11eb-9c3c-e4b071269b41.png)
+
 
 Sadly the windows screen record can only caputure one window at a time and opencv creates a new one where it shows the webcam
-https://user-images.githubusercontent.com/70386636/118740793-93423580-b801-11eb-8b4c-48697162d995.mp4 (VIDEO TO BE REMOVED, I am working on a new one with phisics and the webcam view)
+https://user-images.githubusercontent.com/70386636/118740793-93423580-b801-11eb-8b4c-48697162d995.mp4 (VIDEO TO BE REMOVED, I am working on a new one with phisics and the webcam view and colors/textures)
 
 LIABILITY
 1. I cannot garenty the safety of the program and running and modifiing the script is at your OWN RISK
