@@ -12,7 +12,7 @@ Car logic
 ![correct](https://user-images.githubusercontent.com/70386636/120093804-85c65e80-c0d1-11eb-9b88-3235f05a4612.png)
 
 
-Demon, it may apear laggy or slow, it is parcialy cause by the fact that I was using zoom as a screen recorder and it is neither slow or efficiant in terms of processing power it uses
+Demo, it may apear laggy or slow, it is parcialy cause by the fact that I was using zoom as a screen recorder and it is neither slow or efficiant in terms of processing power it uses
 https://user-images.githubusercontent.com/70386636/118740793-93423580-b801-11eb-8b4c-48697162d995.mp4 view and colors/textures)
 
 LIABILITY
