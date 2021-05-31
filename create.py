@@ -24,3 +24,5 @@ bge.logic.mpHands = mp.solutions.hands
 bge.logic.hands = bge.logic.mpHands.Hands()
 #and sets the hands up
 bge.logic.mpDraw = bge.logic.mp.solutions.drawing_utils 
+#storing speed for better acceleration 
+bge.logic.speed = 0
