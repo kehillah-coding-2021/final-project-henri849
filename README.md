@@ -8,7 +8,7 @@ NOTE:
 HERE IS THE BLENDER VERSION TO USE, IT HAS THE INSTALLED LIBS AND THE MODEL:
 https://drive.google.com/file/d/1jVSqg8RcT52zcIHBECwt7TUZ74n91ADb/view?usp=sharing
 
-Car logic
+Car logic (the skip count should be set according to the computor and what it can handle fiddle with it if the game is too fast or slow/jerky )
 ![correct](https://user-images.githubusercontent.com/70386636/120093804-85c65e80-c0d1-11eb-9b88-3235f05a4612.png)
 
 
