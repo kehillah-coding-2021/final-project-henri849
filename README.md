@@ -15,6 +15,9 @@ Car logic (the skip count should be set according to the computor and what it ca
 Demo, it may apear laggy or slow, it is parcialy cause by the fact that I was using zoom as a screen recorder and it is neither slow or efficiant in terms of processing power it uses TO BE REMOVED NEW VERSION WITH BETTER GRAPHICS GAME MECHANICS & SPEED
 https://user-images.githubusercontent.com/70386636/118740793-93423580-b801-11eb-8b4c-48697162d995.mp4 view and colors/textures)
 
+RUNNING THE DEMO: (ADD NEWSEST EXECUTABLES):
+I will add a folder, double click on the exe name NAME it should take 30-2 minutes to load, it will most likely go unresponsive (NORAML don't stop it) and then the game should popu up, clicking on the winow's X should stop it and stop it's execution
+
 LIABILITY
 1. I cannot garenty the safety of the program and running and modifiing the script is at your OWN RISK
 2. this was made for windows 10 and might not work without all the apropreate libraries
