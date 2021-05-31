@@ -1,4 +1,4 @@
-import bge
+ import bge
 from bge import logic
 math = bge.logic.math
 # this is being run inside the car's logic so the current controler is the car
@@ -25,6 +25,8 @@ pas, img = bge.logic.cap.read()
 imageRGB = bge.logic.cv2.cvtColor(img,bge.logic.cv2.COLOR_BGR2RGB)
 # run the stream through mediapipe
 results = bge.logic.hands.process(imageRGB)
+#acsses car
+sedan = player(own)
 #if there are hand to anasile
 if results.multi_hand_landmarks:
     #were we keep track of the two knuckles for steering angle
@@ -83,8 +85,6 @@ if results.multi_hand_landmarks:
         rise = (cy - cy1)
         # to not divide by 0
         if run != 0:
-            #acsses car
-            sedan = player(own)
             #rotate it with the angle of the knuckles
             own.applyRotation([0,0,math.atan(rise/run)/4.5])
             # looping through the saved data
@@ -92,12 +92,26 @@ if results.multi_hand_landmarks:
                 #if the model thinks were accelerating
                 if each[0][0] > each[0][1]:
                     #calculator force 
-                    sedan.calcloc(0.5)
+                    bge.logic.speed += 0.01
+                    sedan.calcloc(bge.logic.speed)
                     # update object (yes it's unituitive but it's all that works)
                     own.applyForce((0,0,0))
                     # visual feedback a green rectable around the hand
                     img = bge.logic.cv2.rectangle(img, each[1][0], each[1][1], (0,255,0), 4)
                 #tell the user their turning angle
                 bge.logic.cv2.putText(img,str(math.degrees(math.atan(rise/run))),(10,70),bge.logic.cv2.FONT_HERSHEY_PLAIN,3, (255,0,255),3)
+    else:
+        if bge.logic.speed - 0.002 >= 0:
+            bge.logic.speed -= 0.002
+            sedan.calcloc(bge.logic.speed)
+            # update object (yes it's unituitive but it's all that works)
+            own.applyForce((0,0,0))
+else:
+    if bge.logic.speed - 0.002 >= 0:
+        bge.logic.speed -= 0.002
+        sedan.calcloc(bge.logic.speed)
+        # update object (yes it's unituitive but it's all that works)
+        own.applyForce((0,0,0))
+     
 #show them themselves with the added visual information
 bge.logic.cv2.imshow("image",img)
