@@ -12,11 +12,16 @@ Car logic (the skip count should be set according to the computor and what it ca
 ![correct](https://user-images.githubusercontent.com/70386636/120093804-85c65e80-c0d1-11eb-9b88-3235f05a4612.png)
 
 
-Demo, it may apear laggy or slow, it is parcialy cause by the fact that I was using zoom as a screen recorder and it is neither slow or efficiant in terms of processing power it uses TO BE REMOVED NEW VERSION WITH BETTER GRAPHICS GAME MECHANICS & SPEED
+Demo, it may apear laggy or slow, it is parcialy cause by the fact that I was using zoom as a screen recorder and it is neither slow or efficiant in terms of processing power it uses
 https://user-images.githubusercontent.com/70386636/118740793-93423580-b801-11eb-8b4c-48697162d995.mp4 view and colors/textures)
+EXPERIMENTAL, has a sky sphere, better textures, better/actual map but still has problems with colisions (the map icnludes more complex notably concave polygons that mess with the engine) I also sadly didn't have time to shoot a good video (it works in most lighting conditions but less well (better in very sunny then little light))
 
 RUNNING THE DEMO: (ADD NEWSEST EXECUTABLES):
-I will add a folder, double click on the exe name NAME it should take 30-2 minutes to load, it will most likely go unresponsive (NORAML don't stop it) and then the game should popu up, clicking on the winow's X should stop it and stop it's execution
+I will add a folder, double click on the exe name test.blend.exe (i'm not sure why it's sammed that) it should take 30s-2 minutes to load, it will most likely go unresponsive (NORAML don't stop it) and then the game should popu up, clicking on the winow's X should stop it and stop it's execution as well as the escape key
+Here are some of the new features:
+![cameraview](https://user-images.githubusercontent.com/70386636/120596283-6b092800-c3f8-11eb-8e9b-b57487c6eec7.png)
+![loop](https://user-images.githubusercontent.com/70386636/120596292-6e041880-c3f8-11eb-9c0c-a4b1e0007efc.png)
+![world](https://user-images.githubusercontent.com/70386636/120596335-79efda80-c3f8-11eb-893f-3e44c3ae6cf8.png)
 
 LIABILITY
 1. I cannot garenty the safety of the program and running and modifiing the script is at your OWN RISK
@@ -24,8 +29,3 @@ LIABILITY
 3. It uses the camera so risks come with that
 4. As always these are warnings and potentital outcomes, I have never seen it damage anything but I don't want to be responsible
 
-
-
-
-### Grading
-This project will use the usual rubric we have used this year. Make sure to add docstrings to all your functions and edit this README. Make sure to put any dependencies in a 'requirements.txt' file. Commit and push your work often. Most importantly, have fun
