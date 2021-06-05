@@ -1,3 +1,5 @@
 tensorflow
 mediapipe
+opencv
 blender (not a lib)
+numpy
