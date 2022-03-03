@@ -17,6 +17,16 @@ The stucture of it all is pretty simple, Inside of CVmodels (The folder responsi
 .....Tester.py -> allows user to test the created models
   
   
-Game code 
+Game code (Stored in Panda folder)
 
+.....Car.py -> Handels pretty much everything, from loading assets, gesture models, creating game objects, bounding boxes, game variables, ect
+
+.....models/HeightField2.png -> default heighfeild image used as terain (I am working on a version that acsepts models as terains)
+
+Possible errors and fixes:
+
+  tensorflow.python.framework.errors_impl.NotFoundError: NewRandomAccessFile failed to Create/Open: frozen_models/frozen_graph.pb : The system cannot find the path specified.    
+  ; No such process
+
+  Easiest fix -> run from command line, this seems to be a problem related to where the file is being executed from, I am working on a fix
 
