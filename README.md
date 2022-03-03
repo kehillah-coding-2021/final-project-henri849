@@ -7,10 +7,15 @@ Most human computer interface devices (such as mice, keyboards, joysticks, and g
 The Panda 3D branch is the 2nd iteration as the Blender Game Engine was obsoleat and didn't had perfeormances issues especialy when exporting the aplication.
 
 The stucture of it all is pretty simple, Inside of CVmodels (The folder responsible for creating the gesture recognition models):
+
 .....mediapipetest1.py -> incharge of data colection, runs mediapipe and when the user presses w,a,d the gestures are converted to json and writen to different files (based on  letter label)
+
 .....dataformat.py -> formats the data into two lists [data,labels] and shuffles the data 
+
 .....modelcreator.py -> creates the model and then freezes it
+
 .....Tester.py -> allows user to test the created models
+  
   
 Game code 
 
