@@ -28,6 +28,7 @@ The stucture of it all is pretty simple, Inside of
 
 **Conda yml import** rather than installing all the dependencies and all(which are listed in the requirements.txt), if you use conda you can simply use the provided yml file
 Here's the conda docs on importing them:
+
 .....https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file
 
 **Possible errors and fixes:**
