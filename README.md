@@ -25,10 +25,16 @@ The stucture of it all is pretty simple, Inside of
 
 .....models/HeightField2.png -> default heighfeild image used as terain (I am working on a version that acsepts models as terains)
 
+
+**Conda yml import** rather than installing all the dependencies and all(which are listed in the requirements.txt), if you use conda you can simply use the provided yml file
+Here's the conda docs on importing them:
+.....https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file
+
 **Possible errors and fixes:**
 
   tensorflow.python.framework.errors_impl.NotFoundError: NewRandomAccessFile failed to Create/Open: frozen_models/frozen_graph.pb : The system cannot find the path specified.    
   ; No such process
 
   **Easiest fix** -> *run from command line*, this seems to be a problem related to where the file is being executed from, *I am working on a fix*
+
 
