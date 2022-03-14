@@ -5,30 +5,10 @@ import direct.directbase.DirectStart
 from direct.showbase.DirectObject import DirectObject
 from direct.showbase.InputStateGlobal import inputState
 
-from panda3d.core import AmbientLight, load_prc_file
-from panda3d.core import DirectionalLight
-from panda3d.core import Vec3
-from panda3d.core import Vec4
-from panda3d.core import LPoint3f
-from panda3d.core import Point3
-from panda3d.core import TransformState
-from panda3d.core import BitMask32
-from panda3d.core import GeoMipTerrain
-from panda3d.core import Filename
-from panda3d.core import PNMImage
-from panda3d.core import Texture, CardMaker
-from panda3d.core import LineSegs
+from panda3d.core import AmbientLight, DirectionalLight, Vec3, Vec4, Point3, TransformState, BitMask32
 
-from panda3d.bullet import BulletWorld
-from panda3d.bullet import BulletPlaneShape
-from panda3d.bullet import BulletHeightfieldShape
-from panda3d.bullet import BulletTriangleMeshShape
-from panda3d.bullet import BulletTriangleMesh
-from panda3d.bullet import BulletBoxShape
-from panda3d.bullet import BulletRigidBodyNode
-from panda3d.bullet import BulletDebugNode
-from panda3d.bullet import BulletVehicle
-from panda3d.bullet import ZUp
+from panda3d.bullet import BulletWorld, BulletTriangleMeshShape, BulletTriangleMesh, BulletBoxShape, BulletRigidBodyNode, BulletDebugNode, BulletVehicle, ZUp
+
 from direct.gui.OnscreenImage import OnscreenImage
 from direct.gui.OnscreenText import OnscreenText
 import cv2
