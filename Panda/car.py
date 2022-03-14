@@ -5,27 +5,9 @@ import direct.directbase.DirectStart
 from direct.showbase.DirectObject import DirectObject
 from direct.showbase.InputStateGlobal import inputState
 
-from panda3d.core import AmbientLight, load_prc_file
-from panda3d.core import DirectionalLight
-from panda3d.core import Vec3
-from panda3d.core import Vec4
-from panda3d.core import LPoint3f
-from panda3d.core import Point3
-from panda3d.core import TransformState
-from panda3d.core import BitMask32
-from panda3d.core import GeoMipTerrain
-from panda3d.core import Filename
-from panda3d.core import PNMImage
-from panda3d.core import Texture, CardMaker
+from panda3d.core import AmbientLight, load_prc_file,DirectionalLight,Vec3,Vec4,LPoint3f,Point3,TransformState,BitMask32,GeoMipTerrain,Filename,PNMImage,Texture, CardMaker
 
-from panda3d.bullet import BulletWorld
-from panda3d.bullet import BulletPlaneShape
-from panda3d.bullet import BulletHeightfieldShape
-from panda3d.bullet import BulletBoxShape
-from panda3d.bullet import BulletRigidBodyNode
-from panda3d.bullet import BulletDebugNode
-from panda3d.bullet import BulletVehicle
-from panda3d.bullet import ZUp
+from panda3d.bullet import BulletWorld,ZUp,BulletPlaneShape,BulletHeightfieldShape,BulletBoxShape,BulletRigidBodyNode,BulletDebugNode,BulletVehicle
 from direct.gui.OnscreenImage import OnscreenImage
 from direct.gui.OnscreenText import OnscreenText
 import cv2
@@ -36,8 +18,12 @@ import tensorflow as tf
 import json
 import numpy as np
 import math
+import pathlib
 #load_prc_file('config.prc')
-with tf.io.gfile.GFile("./frozen_models/frozen_graph.pb", "rb") as f:
+import os 
+dir_path = os.path.dirname(os.path.realpath(__file__))
+
+with tf.io.gfile.GFile(dir_path+ "/frozen_models/frozen_graph.pb", "rb") as f:
 	graph_def = tf.compat.v1.GraphDef()
 	loaded = graph_def.ParseFromString(f.read())
 def wrap_frozen_graph(graph_def, inputs, outputs, print_graph=False):
@@ -95,10 +81,10 @@ class Game(DirectObject):
 
 
 		self.height = 20.0
-		img = PNMImage(Filename('models\HeightField2.png'))
+		img = PNMImage(Filename(pathlib.PurePosixPath(pathlib.Path(dir_path+'\models\HeightField2.png'))))
 		offset = img.getXSize() / 2.0 -0.5
 		self.terrain = GeoMipTerrain("terrain")
-		self.terrain.setHeightfield(Filename("models\HeightField2.png"))
+		self.terrain.setHeightfield(Filename( pathlib.PurePosixPath(pathlib.Path(dir_path+"\models\HeightField2.png"))))
 
 		self.root = self.terrain.getRoot()
 		self.root.reparentTo(render)
@@ -383,7 +369,7 @@ class Game(DirectObject):
 		self.world.setDebugNode(self.debugNP.node())
 
 		# Plane
-		img = PNMImage(Filename('models\HeightField2.png'))
+		img = PNMImage(Filename(pathlib.PurePosixPath(pathlib.Path(dir_path+'\models\HeightField2.png'))))
 		shape = BulletHeightfieldShape(img, self.height, ZUp)
 
 		self.groundNP = self.worldNP.attachNewNode(BulletRigidBodyNode('Ground'))
@@ -469,4 +455,3 @@ class Game(DirectObject):
 		wheel.setRollInfluence(0.1)
 game = Game()
 run()
-
