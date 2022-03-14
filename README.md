@@ -31,7 +31,7 @@ Here's the conda docs on importing them:
 
 &emsp;https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file
 
-**Possible errors and fixes:**
+**Possible errors and fixes:** (Most of these have been fixed or will be fixed)
 
 &emsp;tensorflow.python.framework.errors_impl.NotFoundError: NewRandomAccessFile failed to Create/Open: frozen_models/frozen_graph.pb : The system cannot find the path specified.    
 &emsp;; No such process
