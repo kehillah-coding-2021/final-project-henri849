@@ -8,7 +8,6 @@ from direct.showbase.InputStateGlobal import inputState
 from panda3d.core import AmbientLight, DirectionalLight, Vec3, Vec4, Point3, TransformState, BitMask32
 
 from panda3d.bullet import BulletWorld, BulletTriangleMeshShape, BulletTriangleMesh, BulletBoxShape, BulletRigidBodyNode, BulletDebugNode, BulletVehicle, ZUp
-
 from direct.gui.OnscreenImage import OnscreenImage
 from direct.gui.OnscreenText import OnscreenText
 import cv2
@@ -19,10 +18,11 @@ import tensorflow as tf
 import json
 import numpy as np
 import math
-from panda3d.core import NodePath
 #load_prc_file('config.prc')
+import os 
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
-with tf.io.gfile.GFile("./frozen_models/frozen_graph.pb", "rb") as f:
+with tf.io.gfile.GFile(dir_path+ "/frozen_models/frozen_graph.pb", "rb") as f:
 	graph_def = tf.compat.v1.GraphDef()
 	loaded = graph_def.ParseFromString(f.read())
 
