@@ -22,9 +22,3 @@ LIABILITY
 2. this was made for windows 10 and might not work without all the apropreate libraries
 3. It uses the camera so risks come with that
 4. As always these are warnings and potentital outcomes, I have never seen it damage anything but I don't want to be responsible
-
-
-
-
-### Grading
-This project will use the usual rubric we have used this year. Make sure to add docstrings to all your functions and edit this README. Make sure to put any dependencies in a 'requirements.txt' file. Commit and push your work often. Most importantly, have fun
